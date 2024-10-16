@@ -150,6 +150,14 @@ function NeotestAdapter.build_spec(args)
       pos_id = position.id,
       name_mappings = name_mappings,
     },
+    strategy = {
+      type = "ruby",
+      name = "Launch & Debug    |   Minitest",
+      request = "launch",
+      command = command,
+      localfs = true,
+      cwd = "${workspaceFolder}",
+    },
   }
 end
 
